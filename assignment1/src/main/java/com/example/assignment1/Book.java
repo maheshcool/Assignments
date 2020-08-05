@@ -27,6 +27,15 @@ public final class Book {
         System.out.println("Price: " + price);
     }
 
+    public void showListView() {
+        System.out.print("Title: " + title);
+        System.out.print("/tAuthor: " + author);
+        System.out.print("/tPublisher: " + publisher);
+        System.out.print("/tLanguage: " + language);
+        System.out.print("/tPublication Year: " + publicationYear);
+        System.out.println("/tPrice: " + price);
+    }
+
     public int add(int a, int b) {
         return a+b;
     }

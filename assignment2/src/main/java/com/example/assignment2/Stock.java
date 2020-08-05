@@ -4,8 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-
-
+import java.util.Random;
 import java.util.List;
 
 public class Stock {
@@ -38,12 +37,16 @@ public class Stock {
     }
 
     protected void maintain_Stock() {
+        char [] c1 = new char[1];
         for(int i=0; i<20; i++) {
             for(int j=0; j<10; j++) {
                 for(int k=0; k<10; k++) {
                     for(int l =0; l<10; l++) {
                         for(int m=0; m<10; m++) {
-                            Book temp =new Book("B" + i, "A" + j, 
+                            char c = (char)('A' + i);
+                            c1[0] = c;
+                            String bk = new String(c1);
+                            Book temp =new Book(bk + j, "A" + j,
                                                 "ISBN" + isbnKey(i, j, k, l, m),
                                                 "P" + i,
                                                 "L" + l, "200" + k, 
