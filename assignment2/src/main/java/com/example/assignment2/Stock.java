@@ -100,4 +100,14 @@ public class Stock {
         }
     }
 
+    public List<Book> sortByPrice(List<Book> book){
+        List<Book> sortedBook = new ArrayList<Book>() ;
+        Map <String, Integer> mp =new HashMap<String, Integer>();
+        for(Book i : book) {
+            mp.put(i.isbn, i.price);
+        }  
+        
+        return sortedBook;
+    }
+
 }

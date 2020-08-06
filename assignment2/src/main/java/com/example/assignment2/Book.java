@@ -1,5 +1,7 @@
 package com.example.assignment2;
 
+import java.util.Comparator;
+
 public final class Book {
     String title, author, isbn, publisher, language, binding, publicationYear;
     int price;
@@ -35,12 +37,5 @@ public final class Book {
         System.out.print("\tPublication Year: " + publicationYear);
         System.out.println("\tPrice: " + price);
     }
-
-    public int add(int a, int b) {
-        return a+b;
-    }
-
-	// public void showBookList() {
-	// }
 
 }
